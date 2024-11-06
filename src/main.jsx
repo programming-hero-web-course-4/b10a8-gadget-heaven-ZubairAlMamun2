@@ -15,6 +15,7 @@ import Dashboard from './assets/components/Dashboard';
 import Root from './assets/components/Root';
 import Details from './assets/components/Details';
 import Categorydata from './assets/components/Categorydata';
+import Contact from './assets/components/Contact';
 
 
 
@@ -28,7 +29,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        
         loader:()=>fetch('../category.json'),
         children:[
           {path: "",
@@ -50,8 +50,12 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/details/:product_Id",
-        loader:()=>fetch("./data.json"),
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "/detail/:product_Id",
+        loader:()=>fetch("../data.json"),
         element: <Details />,
       },
     ],

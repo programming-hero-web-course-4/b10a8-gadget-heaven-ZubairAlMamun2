@@ -9,7 +9,7 @@ const AllGadget = ({categories}) => {
   return (
     <div className="w-11/12 mx-auto pt-10">
         <h1 className="text-center text-3xl font-bold ">Explore Cutting-Edge Gadgets</h1>
-        <div className="grid grid-cols-10 gap-3 mt-10">
+        <div className="md:grid grid-cols-10 gap-3 mt-10">
             <div className="col-span-2 bg-white  py-5 border-none rounded-lg">
                 <Categories categories={categories} />
             </div>

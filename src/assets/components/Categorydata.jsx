@@ -32,7 +32,7 @@ const Categorydata = () => {
                 <h2 className="card-title">{newgadget.product_title}</h2>
                 <p>Price : {newgadget.price}k</p>
                 <div className="card-actions">
-                <NavLink to={`/details/${newgadget.product_id}`}><button className="border border-purple-600 px-5 py-2 rounded-full" >Details</button></NavLink>
+                <NavLink to={`/detail/${newgadget.product_id}`}><button className="border border-purple-600 px-5 py-2 rounded-full" >Details</button></NavLink>
                 </div>
                 
             </div>

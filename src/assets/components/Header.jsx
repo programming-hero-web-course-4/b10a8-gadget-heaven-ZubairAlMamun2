@@ -27,10 +27,11 @@ const Header = () => {
     <h1 className="text-2xl font-bold">Gadget Heaven</h1>
   </div>
   <div className="navbar-center lg:flex">
-    <ul className="menu menu-horizontal px-1 text-base">
+    <ul className="menu  md:menu-horizontal px-1 text-base">
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/statiscits">Statistics</NavLink></li>
       <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+      <li><NavLink to="/contact">Contact</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">

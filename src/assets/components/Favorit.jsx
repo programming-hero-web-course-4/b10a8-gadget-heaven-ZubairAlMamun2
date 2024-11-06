@@ -21,15 +21,15 @@ const Favorit = ({handleactive}) => {
             <button className="border border-black px-10 py-2  font-bold rounded-full bg-white text-black" >Wishlist </button>
         </div>
     </div>
-      <div className="flex w-11/12 px-20 mx-auto justify-between pt-5">
+      <div className="flex w-11/12 md:px-20 mx-auto justify-between pt-5">
         <div><h2 className="text-xl font-bold">WishList</h2></div>
         
       </div>
-      <div className="mt-5 px-24">
+      <div className="mt-5 md:px-24">
           {fav&&fav.map((nawcart)=>{
-           return  <div key={nawcart.product_id} className="my-2 mx-10">
-            <div className="flex bg-white border-none rounded-lg justify-between p-5 items-center">
-              <div className=" flex items-center gap-5">
+           return  <div key={nawcart.product_id} className="my-2 mx-2 md:mx-10">
+            <div className="md:flex bg-white border-none rounded-lg justify-between p-5 items-center">
+              <div className=" md:flex items-center gap-5">
               <div className="w-32 border rounded-lg p-5 h-32"><img src={nawcart.product_image} alt="" /></div>
               <div>
                 <h2 className="text-xl font-bold">{nawcart.product_title}</h2>
@@ -38,7 +38,7 @@ const Favorit = ({handleactive}) => {
                 <button className="border border-none px-8 py-2 bg-purple-500 text-white font-bold rounded-full">Add to Card</button>
               </div>
               </div>
-              <div><button>delete</button></div>
+              <div><button className="btn">delete</button></div>
             </div>
             </div>
             

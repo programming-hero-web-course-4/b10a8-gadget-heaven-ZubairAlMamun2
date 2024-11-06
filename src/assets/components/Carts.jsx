@@ -11,6 +11,9 @@ const Cart = ({handleactive}) => {
     handleactive()
   }
 
+  const[disabled,setdisabled]=useState(true);
+  
+
   
 
   const[cart,setcart]=useState([]);
@@ -18,6 +21,12 @@ const Cart = ({handleactive}) => {
     const getcart=localStorage.getItem('cart');
     const parsedata=JSON.parse(getcart)
     setcart(parsedata)
+    if(parsedata){
+      setdisabled(false)
+    }
+    else{
+      setdisabled(true)
+    }
   },[])
   const sortdata=()=>{
     const sortedcart=[...cart].sort((a,b)=>b.price-a.price)
@@ -39,17 +48,17 @@ const Cart = ({handleactive}) => {
             <button className="border border-white px-10 py-2  font-bold rounded-full bg-purple-600 text-white" onClick={passactive}>Wishlist </button>
         </div>
     </div>
-      <div className="flex w-11/12  px-20 mx-auto justify-between pt-5">
+      <div className="md:flex w-11/12  md:px-20 mx-auto justify-between pt-5">
         <div><h2 className="text-xl font-bold">Cart</h2></div>
-        <div className="flex gap-2 items-center">
+        <div className="md:flex gap-2 items-center">
           <h2 className="text-xl font-bold">Total cost:{totalIncome()}</h2>
           <button onClick={()=>{
             sortdata();
           }} className="border border-purple-500 px-5 py-2  text-black font-bold rounded-full " >Sort by Price</button>
-          <NavLink   onClick={()=>{
+          <button disabled={disabled}   onClick={()=>{
             clearstorage();
             document.getElementById('my_modal_1').showModal()
-          }} className="border border-black px-8 py-2 bg-purple-500 text-white font-bold rounded-full " >Purchase</NavLink>
+          }} className="border border-black px-8 py-2 bg-purple-500 text-white font-bold rounded-full " > Purchase</button>
           <dialog id="my_modal_1" className="modal">
             <div className="modal-box">
               <div className="flex justify-center">
@@ -68,11 +77,11 @@ const Cart = ({handleactive}) => {
           </dialog>
         </div>
       </div>
-      <div className="mt-5 px-24">
+      <div className="mt-5 md:px-24">
           {cart&&cart.map((nawcart)=>{
            return  <div key={nawcart.product_id} className="my-2 mx-10">
-            <div className="flex bg-white border-none rounded-lg justify-between p-5 items-center">
-              <div className=" flex items-center gap-5">
+            <div className="md:flex bg-white border-none rounded-lg justify-between p-5 items-center">
+              <div className=" md:flex items-center gap-5">
               <div className="w-32 border rounded-lg p-5 h-32"><img src={nawcart.product_image} alt="" /></div>
               <div>
                 <h2 className="text-xl font-bold">{nawcart.product_title}</h2>
@@ -80,7 +89,7 @@ const Cart = ({handleactive}) => {
                 <p className="font-bold">Price:{nawcart.price}</p>
               </div>
               </div>
-              <div><button>delete</button></div>
+              <div><button className="btn">delete</button></div>
             </div>
             </div>
             
