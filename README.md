@@ -1,8 +1,24 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Gadget Haven(https://gadget-wala.netlify.app/)
+ 
+## Requirement(file:///D:/PH_Projects+++/Assignment-8clone/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf)
 
-Currently, two official plugins are available:
+##  List of React concepts used in the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- useLoaderData()
+- React hoocks {usestate,useEffect}
+- useParams()
+- etc..
+
+##  Key Features
+
+- Have toast pop-up
+- Have Cart section
+- Have WishList section
+- Have Details section
+- etc..
+
+
+## In this project i used (local storage) for handling and managing data 
+
+
