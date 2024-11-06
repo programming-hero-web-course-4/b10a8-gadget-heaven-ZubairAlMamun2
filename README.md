@@ -1,7 +1,7 @@
 
-# Gadget Haven(https://gadget-wala.netlify.app/)
+# Gadget Haven (https://gadget-wala.netlify.app/)
  
-# Requirement(file:///D:/PH_Projects+++/Assignment-8clone/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf)
+## Requirement file (https://drive.google.com/file/d/1v-YccYcV34o-DZyZ_iHF4EOfyXR5cJnG/view?usp=sharing)
 
 ##  List of React concepts used in the project
 
