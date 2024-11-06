@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className="w-full mx-auto my-24">
+    <div className="w-full mx-auto py-20">
       <h1 className="text-center text-2xl font-bold">Gadget Heaven</h1>
       <p className="text-center text-slate-500">Leading the way in cutting-edge technology and innovation.</p>
       <div className="w-7/12 mx-auto grid grid-cols-1 lg:grid-cols-3 ">

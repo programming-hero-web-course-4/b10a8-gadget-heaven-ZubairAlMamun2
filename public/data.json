@@ -1,0 +1,170 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "UltraSlim Laptop",
+        "product_image": "https://m.media-amazon.com/images/I/61iE1O3TK2L._AC_UY218_.jpg",
+        "category": "Computers",
+        "price": 999.99,
+        "description": "A lightweight and powerful laptop perfect for on-the-go productivity.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "14-inch display"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "brand": "TechBrand"
+    },
+    {
+        "product_id": "2",
+        "product_title": "Smartphone Pro 12",
+        "product_image": "https://m.media-amazon.com/images/I/512li0FmJ9L._AC_UY218_.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "Latest smartphone with cutting-edge technology and sleek design.",
+        "Specification": [
+            "6.7-inch OLED display",
+            "Triple camera system",
+            "128GB storage",
+            "5G capable"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "color": "Midnight Black"
+    },
+    {
+        "product_id": "3",
+        "product_title": "Smartwatch Series 5",
+        "product_image": "https://m.media-amazon.com/images/I/618nYLb6BDL._AC_UY218_.jpg",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "Stylish smartwatch with fitness tracking and notification features.",
+        "Specification": [
+            "Heart rate monitor",
+            "GPS",
+            "Water resistant",
+            "Customizable watch faces"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "battery_life": "24 hours"
+    },
+    {
+        "product_id": "4",
+        "product_title": "Fast Charger 30W",
+        "product_image": "https://m.media-amazon.com/images/I/61NnE0NNfwL._AC_UL320_.jpg",
+        "category": "Chargers",
+        "price": 59.99,
+        "description": "Quickly charge your devices with this high-efficiency charger.",
+        "Specification": [
+            "30W output",
+            "USB-C compatible",
+            "Over-voltage protection",
+            "Compact design"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "5",
+        "product_title": "Portable Power Bank 20000mAh",
+        "product_image": "https://m.media-amazon.com/images/I/51J0ndqwvhL._AC_UY218_.jpg",
+        "category": "Power Banks",
+        "price": 55.99,
+        "description": "High-capacity power bank to keep your devices charged on the go.",
+        "Specification": [
+            "20000mAh capacity",
+            "Dual USB output",
+            "LED indicator",
+            "Compact size"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "color": "Silver"
+    },
+    {
+        "product_id": "6",
+        "product_title": "Gaming Laptop X200",
+        "product_image": "https://m.media-amazon.com/images/I/71NxoM8RlsL._AC_UY218_.jpg",
+        "category": "Computers",
+        "price": 1299.99,
+        "description": "High-performance laptop designed for gaming and creative work.",
+        "Specification": [
+            "Intel Core i9",
+            "32GB RAM",
+            "1TB SSD",
+            "NVIDIA RTX 3080"
+        ],
+        "availability": false,
+        "rating": 4.9,
+        "features": "RGB keyboard"
+    },
+    {
+        "product_id": "7",
+        "product_title": "Budget Smartphone A2",
+        "product_image": "https://m.media-amazon.com/images/I/71MC3EN6IoL._AC_UY218_.jpg",
+        "category": "Phones",
+        "price": 199.99,
+        "description": "Affordable smartphone with essential features and good performance.",
+        "Specification": [
+            "6.1-inch HD display",
+            "12MP camera",
+            "64GB storage",
+            "4G support"
+        ],
+        "availability": true,
+        "rating": 4.0,
+        "color": "Ocean Blue"
+    },
+    {
+        "product_id": "8",
+        "product_title": "Fitness Tracker 2.0",
+        "product_image": "https://m.media-amazon.com/images/I/71CQ6esBqFL._AC_UY218_.jpg",
+        "category": "Smart Watches",
+        "price": 99.99,
+        "description": "Advanced fitness tracker with heart rate monitoring and sleep tracking.",
+        "Specification": [
+            "Waterproof",
+            "Calorie counter",
+            "Step tracking",
+            "Syncs with app"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "battery_life": "5 days"
+    },
+    {
+        "product_id": "9",
+        "product_title": "Wireless Charger Pad",
+        "product_image": "https://m.media-amazon.com/images/I/61mBfpz7vKL._AC_UY218_.jpg",
+        "category": "Chargers",
+        "price": 86.99,
+        "description": "Convenient wireless charging pad for compatible devices.",
+        "Specification": [
+            "10W output",
+            "Anti-slip design",
+            "LED charging indicator"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "compatibility": "Qi-enabled devices"
+    },
+    {
+        "product_id": "10",
+        "product_title": "Mini Power Bank 10000mAh",
+        "product_image": "https://m.media-amazon.com/images/I/61GC3xi6bkL._AC_UY218_.jpg",
+        "category": "Power Banks",
+        "price": 94.99,
+        "description": "Compact power bank perfect for carrying in your pocket.",
+        "Specification": [
+            "10000mAh capacity",
+            "Single USB output",
+            "Lightweight"
+        ],
+        "availability": true,
+        "rating": 4.2,
+        "color": "Black"
+    }
+]

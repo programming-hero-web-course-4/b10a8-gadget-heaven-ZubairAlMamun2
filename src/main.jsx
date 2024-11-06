@@ -6,11 +6,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+
+
 import ErrorPage from './assets/components/ErrorPage';
 import Home from './assets/components/Home';
 import Statistics from './assets/components/Statistics';
 import Dashboard from './assets/components/Dashboard';
 import Root from './assets/components/Root';
+import Details from './assets/components/Details';
+import Categorydata from './assets/components/Categorydata';
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -21,10 +28,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "/home",
-        element: <Home />,
+        
+        loader:()=>fetch('../category.json'),
+        children:[
+          {path: "",
+            element: <Categorydata />,
+            loader:()=>fetch("../data.json"),
+          },
+          {path: "/:category",
+            element: <Categorydata />,
+            loader:()=>fetch("../data.json"),
+          },
+        ],
       },
       {
         path: "statiscits",
@@ -33,6 +48,11 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/details/:product_Id",
+        loader:()=>fetch("./data.json"),
+        element: <Details />,
       },
     ],
   },
